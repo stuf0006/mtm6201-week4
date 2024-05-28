@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 -Responsive images</title>
+    <link rel="stylesheet"  href="css/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Responsive images</h1>
+       
+           <section>
+             <h2> Same image/ different sizes</h2>
+            
+                <img 
+            
+                srcset="
+                https://placehold.co/320x200 320w, 
+                https://placehold.co/640x400 640w,
+                https://placehold.co/1024x600 1024w" 
+       
+                sizes="
+                (max-width: 320px)  320px,
+                (max-width: 640px)  640px,
+                (max-width: 1024px) 1024px"
+            
+                src="https://placehold.co/640x400" 
+                alt="placeholder image" >
+          
+           </section>
+           <section>
+           <h2>Same size /different resolution</h2>
+       <img 
+       srcset="https://placehold.co/320x320,
+              https://placehold.co/640x640 2x,
+              https://placehold.co/960x960 3x"
+
+        src=" https://placehold.co/640x640"
+       alt="placeholder image" class="avatar">
+        </section>
+        </div>
+    
+</body>
+</html>
